@@ -1,0 +1,585 @@
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: Roboto;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+
+p
+{
+	color: black;
+	padding: 0 15px;
+}
+
+a{
+	display: inline-block;
+}
+
+
+
+header
+{
+	/*background-color: black;
+	margin-bottom: 15px;
+	margin-top: 15px;*/
+	padding: 15px 0;
+	/* fijar el menu para que nos siga */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+	background-color: white;
+}
+
+header .container
+{
+	display: flex; /* aprovecha espacios, es flexible con los hijos*/ 
+	justify-content: space-between; /* crea espacio entre elementos, uno a la izquierda y otro a la derecha*/
+	align-items: center;
+}
+
+header .container .header-logo
+{
+	width: 50px;
+}
+
+header .container a 
+{
+	color: red;
+	text-decoration: none; /*quitar linea de link */
+	margin: 0 15px;
+}
+
+header .container .hamb
+{
+	display: none;
+	position: relative;
+}
+
+.container
+{
+	width: 900px;
+	margin: 0 auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	position: relative;
+
+}
+
+.seccion
+{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+
+.titulo{
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #C90609;
+    border-radius: 6px;
+    border: 2px solid #5FC8D1;
+  }
+
+  .toolBarButton{
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+  }
+	 .toolBarButton:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }	
+			
+	.btn_cancelar{
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #9b0e0e;
+	border-radius: 6px;
+    border: 2px solid #C90609;
+  }
+  .btn_cancelar:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }	
+
+  .btn_ver{
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: skyblue;
+	border-radius: 6px;
+    border: 2px solid #C90609;
+  }
+
+.btn_ver:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }	
+
+
+#inicio
+{
+	position: relative; /* espacio para hacerlos estaticos */
+}
+
+td {
+border:hidden;
+}
+table {
+border: 0px solid #0000FF;
+background-color:#FFF;
+}
+
+#inicio img
+{
+	width: 100%;
+	display: block;
+}
+
+#inicio .logosw img
+{
+	width: 40%;
+}
+
+#inicio .bloque-inicio
+{
+	position: absolute; /* me da transparencia */
+	top: 35%;
+	left: 50%;
+	width: 400px;
+	text-align: center;
+	margin-left: -200px;
+
+}
+
+#inicio .bloque-inicio h1
+{
+	color: white;
+	font-size: 30px;
+}
+
+#inicio .bloque-inicio p
+{
+	color: black;
+}
+
+.boton{
+
+	text-align: center;
+	text-decoration: none; /*quitar linea */
+	padding: 5px 2px;
+	border: none;
+	border-radius: 6px;
+}
+
+.boton.boton-azul
+{
+	color: blue; 
+	background-color: white;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#empresa
+{
+	background-image: url(../img/empresa2.jpg); /*colocamos una imagen de fondo*/
+	background-size: cover; 
+	padding: 15px;
+}
+
+#empresa p
+{
+	color: white;
+	text-align: center;
+	font-size: 16px;
+}
+
+.row
+{
+	display: flex; /* aprovechamos el espacio */
+	flex-wrap: wrap; /* sinó entra se va hacia abajo la columna*/
+}
+
+.container-fluid
+{
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	position: relative;
+}
+
+.columna
+{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+.columna-33
+{
+	width: 33.33%;
+}
+
+#servicios .bloque-servicio
+{
+	border: 1px solid grey; /*borde ancho tipo color	*/
+}
+
+#servicios .bloque-servicio .bloque-img-servicio img
+{
+	width: 100%;
+}
+
+#servicios .bloque-servicio .bloque-contenido-servicio
+{
+	padding: 15px;
+}
+
+#servicios .bloque-servicio .bloque-contenido-servicio h3
+{
+	margin-top: 0;
+	font-size: 25px;
+}
+
+#servicio .bloque-servicio .bloque-img-servicio.cuadrado-perfecto
+{
+	padding-bottom: 40%;
+}
+
+.boton.boton-rojo
+{
+	color: red;
+	background-color: white;
+	font-size: 16px;
+	font-weight: bold;
+	border: 1px solid red;
+}
+
+.cuadrado-perfecto
+{
+	width: 100%; /* todo el ancho del bloque*/
+	padding-bottom: 100%;
+	position: relative;
+}
+
+.cuadrado-perfecto img 
+{
+	width: 100%; /*ancho del bloque*/
+	height: 100%;
+	object-fit: cover; /*cubre todo el espacio */
+	object-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#galeria h4
+{
+	padding-right: 15px;
+	padding-left: 15px;
+	text-align: center;
+	position: absolute;
+	top: 40%;
+	color: white;
+	font-size: 18px;
+	width: 100%;
+}
+
+#galeria img 
+{
+	filter: grayscale(1);
+}
+
+#galeria .cuadrado-perfecto:hover img 
+{
+	filter: grayscale(0);
+}
+
+#galeria .cuadrado-perfecto:hover h4 
+{
+	display: none;
+}
+
+#contacto
+{
+	position: relative;
+}
+
+#contacto iframe
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	filter: grayscale(1);
+}
+
+#contacto form
+{
+	padding: 60px;
+	background-color: red;
+}
+
+#contacto form .form-block
+{
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+#contacto form .form-block .form-control
+{
+	display: block;
+	height: 40px;
+	font-size: 16px;
+	border:  1px solid grey;
+	width: 100%;
+	padding: 5px 10px;
+}
+
+
+
+#contacto form .form-block textarea
+{
+	display: block;
+	height: 100px;
+	font-size: 16px;
+	border: 1px solid grey;
+	width: 100%;
+	padding: 5px 10px;
+}
+
+.columna-41
+{
+	width: 41.66%;
+}
+
+.empujar-58
+{
+	margin-left: 58.33%;
+}
+
+#contacto form .form-block.bloque-ultimo
+{
+	margin-bottom: 0;
+}
+
+.boton.boton-negro
+{
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+footer
+{
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	padding-top: 60px;
+}
+
+footer .barra-footer
+{
+	background-color: grey;
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	/* padding: 20px 15px */
+}
+
+.columna-25
+{
+	width: 25%;
+}
+
+footer ul
+{
+	padding-left: 0;
+	list-style: none;
+	margin: 0px;
+}
+
+footer .logo-footer
+{
+	/* width: 100%; */
+}
+
+footer p
+{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+footer a
+{
+	color: white;
+	text-decoration: none;
+}
+
+footer ul li 
+{
+	margin-bottom: 10px;
+}
+
+footer .redes
+{
+	font-size: 30px;
+	display: flex;
+}
+
+footer .redes a
+{
+	margin: 0 7.5px;
+}
+
+
+/* estilos para móbiles 767px*/
+
+@media(max-width: 767px)
+{
+	body
+	{
+		font-size: 15px;
+	}
+
+	header .container nav
+	{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: white;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		padding-left: 15px;
+		padding-right: 15px;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+
+		transition: all 0.4s ease;
+		transform: translateX(100%);
+	}
+	/* para jquery */
+	header .container nav.open
+	{
+		transform: translateX(0);
+	}
+
+	/* fin para jquery */
+
+	header .container nav a 
+	{
+		font-size: 30px;
+		margin: 15px 0;
+	}
+
+	header .container .hamb
+	{
+		display: block;
+		font-size: 40px;
+		color: red;
+	}
+
+	.container
+	{
+		width: 100%;
+	}
+
+	#inicio
+	{
+		height: 100vh; /*vh es alto del dispositivo */
+	}
+
+	#inicio img 
+	{
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	.columna-mobile-100
+	{
+		width: 100%;
+	}
+
+	.columna-mobile-50
+	{
+		width: 50%;
+	}
+
+	#servicios .bloque-servicio
+	{
+		margin-bottom: 15px;
+	}
+
+	#contacto
+	{
+		padding: 0;
+	}
+
+	#contacto iframe
+	{
+		position: relative;
+		height: 50vh;
+	}
+
+	.empujar-mobile-0
+	{
+		margin-left: 0;
+	}
+
+	.sinpadding-mobile
+	{
+		padding: 0;
+	}
+
+	form .boton.boton-negro
+	{
+		width: 100%;
+	}
+
+	footer
+	{
+		text-align: center;
+	}
+
+	footer .logo-footer
+	{
+	/*	width: 50%; */
+	}
+
+	footer .redes i
+	{
+		text-align: center;
+	}
+
+
+}
